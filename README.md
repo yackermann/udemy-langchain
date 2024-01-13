@@ -18,3 +18,15 @@ Install system dependencies:
 ```bash
 brew install pkg-config poppler
 ```
+
+- GitLSF is missing (MacOS)
+
+```bash
+brew install git-lfs
+```
+
+- Missing tesseract
+
+```bash
+brew install tesseract
+```
