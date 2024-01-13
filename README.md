@@ -30,3 +30,22 @@ brew install git-lfs
 ```bash
 brew install tesseract
 ```
+
+- Pygraphviz is failing to install
+
+See https://stackoverflow.com/questions/40266604/pip-install-pygraphviz-fails-failed-building-wheel-for-pygraphviz
+
+And this: https://github.com/pygraphviz/pygraphviz/issues/11#issuecomment-1876025261
+
+
+```bash
+brew install graphviz
+
+pip install graphviz
+
+pip install --no-cache-dir \
+  --config-settings="--global-option=build_ext" \
+  --config-settings="--global-option=-I$(brew --prefix graphviz)/include/" \
+  --config-settings="--global-option=-L$(brew --prefix graphviz)/lib/" \
+  pygraphviz
+```
