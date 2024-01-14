@@ -5,6 +5,25 @@ This is my code for the Damien Benveniste [Langchain Udemy course](https://www.u
 
 This code is here as great reference in case something does not work, but it worked for me, or was fixed by me while doing the course.
 
+## Setup
+
+1. Create `virtualenv` for python@3.10 and activate it
+
+```bash
+# For MacOS
+virtualenv -p /opt/homebrew/bin/python3.10 venv
+
+source ./venv/bin/activate
+```
+
+2. Install deps
+
+```
+pip install -r requirements.txt
+```
+
+3. Rename `example.env` to `.env` and fill API key details
+
 ## Additional Notes
 
 - FAISS is failing to install
